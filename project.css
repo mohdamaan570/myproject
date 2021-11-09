@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  /* background-color:aqua;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%); */
+  background: url('https://images.unsplash.com/photo-1596496181871-9681eacf9764?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jeswin-thomas-2Q3Ivd-HsaM-unsplash.jpg&w=1920');
+  /* background-repeat:no-repeat; */
+  background-size: 100%;
+  font-family: 'Poppins', sans-serif;
+  display:-webkit-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    background-size: 200%;
+    background-repeat: none;
+  }
+}
+
+.quiz-container {
+  background: radial-gradient(#f7caca 0%, #f5f7fa);
+  
+  border-radius: 50px;
+  box-shadow: 0 0 200px 40px rgba(100, 100, 100, 0.1);
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+/* @keyframes rotate {
+  from {
+    transform: perspective(1500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: perspective(1500px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+} */
+/* .quiz-container:hover {
+  animation: rotate 5s 1 ease-in-out;
+} */
+
+.quiz-header {
+  padding: 80px;
+}
+
+h2 {
+  padding: 1px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+ul {
+  list-style-type: decimal;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  font-family:cursive;
+  font-weight: 900;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8e44ad;
+  color: #fff;
+  border:lightslategray;
+  display: ruby-base-container;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 12px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #732d91;
+}
+
+button:focus {
+  outline: none;
+  background-color: #5e3370;
+}
