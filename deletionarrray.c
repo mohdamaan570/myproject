@@ -12,7 +12,7 @@ void main()
     for(i=P; i<5; i++){
         a[i]=a[i+1];
 }
-printf("new array:\n");
+printf("new array is :\n");
     for(i=0; i<5; i++)
     printf("%d",a[i]);
 }
