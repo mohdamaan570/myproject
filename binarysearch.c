@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[100],i,n,s,lb,mid,ub;
+    int a[100],i,n,se,lb,mid,ub;
     printf("Enter the size of array\n");
     scanf("%d",&n);
     printf("Enter the elements of array\n");
@@ -9,7 +9,7 @@ void main()
         scanf("%d",&a[i]);
     }
     printf("Enter the element you want to search\n");
-    scanf("%d",&s);
+    scanf("%d",&se);
     lb=0;
     ub=n;
     mid=(lb+ub)/2;
